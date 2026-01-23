@@ -1,0 +1,10 @@
+services:
+  webapp:
+    image: pramanan3/simple_web_file_server:latest
+    init: true
+    network_mode: "host"
+    volumes:
+    - type: bind
+      source: ../
+      target: /home/docker_tutorial/
+
