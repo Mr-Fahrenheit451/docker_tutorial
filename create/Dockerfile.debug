@@ -4,13 +4,13 @@ FROM python:3.7-alpine
 RUN apk add --no-cache gcc musl-dev linux-headers
 
 #create working directory
-WORKDIR /home/NASA_HOME/
+WORKDIR /home/python_app/
 
 #copy code from your machine (host) to the container youre creating
-COPY ./ /home/NASA_HOME/
+COPY ./ /home/python_app/
 
 #make sure code can be executed with permissions
-RUN chmod -R +x /home/NASA_HOME/
+RUN chmod -R +x /home/python_app/
 
 #install any python dependencies
 RUN pip install -r requirements.txt 

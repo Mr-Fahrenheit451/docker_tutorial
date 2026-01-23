@@ -1,4 +1,6 @@
-import os, sys
+import os, sys, time
 from hello_world_func import *
 
-hello_world_func("NASA@Mars!")
+while True:
+    time.sleep(5)
+    hello_world_func("Mars!")
