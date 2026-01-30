@@ -10,6 +10,6 @@ COPY ./ /home/python_app/
 RUN chmod -R +x /home/python_app/
 
 #run your code
-# CMD python ./hello-world2.py
+CMD python ./hello-world2.py
 
-CMD tail -f /dev/null
+# CMD tail -f /dev/null
