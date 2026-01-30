@@ -1,4 +1,4 @@
-FROM homert2admin/iem5990_create_test1:latest
+FROM pramanan3/my_python_app:latest
 
 #create working directory
 WORKDIR /home/python_app/

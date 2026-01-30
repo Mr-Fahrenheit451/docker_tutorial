@@ -17,5 +17,4 @@ RUN pip install -r requirements.txt
 
 #run your code
 CMD python ./hello-world.py
-#> ./test.txt
 
