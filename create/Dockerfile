@@ -4,13 +4,13 @@ FROM python:3.12-alpine
 RUN apk add --no-cache gcc musl-dev linux-headers
 
 #create working directory
-WORKDIR /home/python_app/
+WORKDIR /home/example_python_app/
 
 #copy code from your machine (host) to the container youre creating
-COPY ./ /home/python_app/
+COPY ./ /home/example_python_app/
 
 #make sure code can be executed with permissions
-RUN chmod -R +x /home/python_app/
+RUN chmod -R +x /home/example_python_app/
 
 #install any python dependencies
 RUN pip install -r requirements.txt 
