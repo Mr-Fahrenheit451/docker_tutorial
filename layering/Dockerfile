@@ -1,4 +1,4 @@
-FROM pramanan3/my_python_app:latest
+FROM pramanan3/home_example:latest
 
 #create working directory
 WORKDIR /home/python_app/
